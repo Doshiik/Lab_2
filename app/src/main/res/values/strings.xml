@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Калькулятор</string>
+    <string name="enter_numbers_here"> Писати тут</string>
+    <string name="no_answer">Немає відповіді</string>
+    <string name="turn">Назад</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+</resources>

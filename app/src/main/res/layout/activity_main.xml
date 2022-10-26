@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E1E1E"
+    android:backgroundTintMode="add"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/enterNums"
+        android:layout_width="410dp"
+        android:layout_height="200dp"
+        android:autofillHints=""
+        android:background="#B5B1AFAF"
+        android:backgroundTint="#1E1E1E"
+        android:backgroundTintMode="add"
+        android:ems="10"
+        android:hint="@string/enter_numbers_here"
+        android:inputType="number"
+        android:textAlignment="textStart"
+        android:textColorHint="#000000"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/sunBtn"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#B5B1AFAF"
+        android:text="@string/plus"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterNums" />
+
+    <Button
+        android:id="@+id/minusBtn"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#B5B1AFAF"
+        android:text="@string/minus"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/sunBtn"
+        app:layout_constraintTop_toBottomOf="@+id/enterNums" />
+
+    <Button
+        android:id="@+id/multyBtn"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="110dp"
+        android:background="#B5B1AFAF"
+        android:text="*"
+        android:textColor="#000000"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterNums" />
+
+    <Button
+        android:id="@+id/divBtn"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="110dp"
+        android:background="#B5B1AFAF"
+        android:text="/"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/multyBtn"
+        app:layout_constraintTop_toBottomOf="@+id/enterNums" />
+
+    <Button
+        android:id="@+id/clearBtn"
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="215dp"
+        android:layout_marginEnd="5dp"
+        android:text="Clear"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterNums" />
+
+    <Button
+        android:id="@+id/resBtn"
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="370dp"
+        android:layout_marginEnd="5dp"
+        android:background="#B5B1AFAF"
+        android:text="Result"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterNums" />
+
+</android.support.constraint.ConstraintLayout>
